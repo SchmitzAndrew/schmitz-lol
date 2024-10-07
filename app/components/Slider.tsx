@@ -47,7 +47,7 @@ export default function Slider({ direction = 'left', className = '' }: SliderPro
               code&nbsp;
             </Link>
           );
-        } else if (wordRandom < 0.1) { 
+        } else if (wordRandom > 0.1 && wordRandom < 0.2) { 
           return (
             <Link key={index} href="https://www.instagram.com/p/C94nztYRHOB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" className="px-1 hover:underline" style={style}>
               painting&nbsp;
