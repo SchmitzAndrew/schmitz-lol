@@ -8,12 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      animation: {
+        'slide-left': 'slide-left var(--animation-duration) linear infinite',
+        'slide-right': 'slide-right var(--animation-duration) linear infinite',
+      },
+      keyframes: {
+        'slide-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        'slide-right': {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

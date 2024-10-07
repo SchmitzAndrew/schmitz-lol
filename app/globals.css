@@ -2,26 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes slide-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.slider-left {
+  animation: slide-left linear infinite;
+  animation-duration: var(--animation-duration);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.slider-right {
+  animation: slide-right linear infinite;
+  animation-duration: var(--animation-duration);
 }
+
