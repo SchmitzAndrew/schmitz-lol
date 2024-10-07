@@ -1,12 +1,12 @@
 export const getScreenConfig = (width: number) => {
-  if (width >= 1536) return { textWidth: 200, baseSpeed: 32, textSizeClass: 'text-6xl', sliderHeight: 100 };
-  if (width >= 1280) return { textWidth: 175, baseSpeed: 31, textSizeClass: 'text-5xl', sliderHeight: 90 };
-  if (width >= 1024) return { textWidth: 150, baseSpeed: 30, textSizeClass: 'text-5xl', sliderHeight: 80 };
-  if (width >= 896) return { textWidth: 125, baseSpeed: 29, textSizeClass: 'text-4xl', sliderHeight: 70 };
-  if (width >= 768) return { textWidth: 100, baseSpeed: 28, textSizeClass: 'text-4xl', sliderHeight: 60 };
-  if (width >= 640) return { textWidth: 75, baseSpeed: 26, textSizeClass: 'text-3xl', sliderHeight: 50 };
-  if (width >= 480) return { textWidth: 50, baseSpeed: 25, textSizeClass: 'text-2xl', sliderHeight: 40 };
-  return { textWidth: 25, baseSpeed: 24, textSizeClass: 'text-xl', sliderHeight: 30 };
+  if (width >= 1536) return { textWidth: 200, baseSpeed: 15, textSizeClass: 'text-6xl', sliderHeight: 100 };
+  if (width >= 1280) return { textWidth: 175, baseSpeed: 18, textSizeClass: 'text-5xl', sliderHeight: 90 };
+  if (width >= 1024) return { textWidth: 150, baseSpeed: 22, textSizeClass: 'text-5xl', sliderHeight: 80 };
+  if (width >= 896) return { textWidth: 125, baseSpeed: 26, textSizeClass: 'text-4xl', sliderHeight: 70 };
+  if (width >= 768) return { textWidth: 100, baseSpeed: 30, textSizeClass: 'text-4xl', sliderHeight: 60 };
+  if (width >= 640) return { textWidth: 75, baseSpeed: 35, textSizeClass: 'text-3xl', sliderHeight: 50 };
+  if (width >= 480) return { textWidth: 50, baseSpeed: 40, textSizeClass: 'text-2xl', sliderHeight: 40 };
+  return { textWidth: 25, baseSpeed: 45, textSizeClass: 'text-xl', sliderHeight: 30 };
 };
 
 export const colors = [
