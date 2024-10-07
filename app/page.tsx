@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col h-screen overflow-hidden">
+    <main className="flex flex-col h-screen overflow-hidden bg-[#f8f8f6]">
       {sliders}
     </main>
   );
