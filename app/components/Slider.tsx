@@ -41,13 +41,13 @@ export default function Slider({ direction = 'left', className = '' }: SliderPro
           };
         }
 
-        if (wordRandom < 0.1) { 
+        if (wordRandom < 0.03) { 
           return (
             <Link key={index} href="https://github.com/SchmitzAndrew/schmitz-lol" target="_blank" rel="noopener noreferrer" className="px-1 hover:underline" style={style}>
               code&nbsp;
             </Link>
           );
-        } else if (wordRandom > 0.1 && wordRandom < 0.2) { 
+        } else if (wordRandom > 0.03 && wordRandom < 0.06) { 
           return (
             <Link key={index} href="https://www.instagram.com/p/C94nztYRHOB/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" className="px-1 hover:underline" style={style}>
               painting&nbsp;
